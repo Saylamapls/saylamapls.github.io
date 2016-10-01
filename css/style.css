@@ -1,0 +1,72 @@
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
+
+.breadcrumb > li +li::before{
+    content:"\f105";
+    font-family: "FontAwesome"
+}
+.navbar-vitalik {
+  background-color: #222;
+  border-color: #080808;
+}
+.logo {
+    border-radius: 10px;
+    width: 50px;
+    display: block;
+    margin-top: -15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+.btn-vitalik {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+
+@media screen and (max-width: 767px){
+    .masonry[data-columns]::before{
+        content: '1 .col-xs-12';
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px){
+    .masonry[data-columns]::before{
+        content: '2 .col-xs-6';
+    }
+}
+@media screen and (min-width: 992px) and (max-width:1199px){
+    .masonry[data-columns]::before{
+        content: '3 .col-xs-4';
+    }
+}
+@media screen and (min-width: 1200px){
+    .masonry[data-columns]::before{
+        content: '3 .col-xs-4';
+    }
+}

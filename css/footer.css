@@ -1,0 +1,22 @@
+.color{
+    color:darkred;
+}
+
+a:hover,
+a:focus {
+  color:firebrick;
+  text-decoration:underline;
+}
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.foot{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+mardel{
+    margin-left: -15px;
+    margin-right: -15px;
+}
